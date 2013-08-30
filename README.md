@@ -15,6 +15,8 @@ gem 'concerned_with'
 ```Ruby
 # app/models/user.rb
 class User < ActiveRecord::Base
+  extend ConcernedWith
+
   concerned_with :validations, :authentication
 end
 
